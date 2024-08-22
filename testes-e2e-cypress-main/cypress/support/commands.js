@@ -27,3 +27,7 @@
 
 //Cypress.Commands.add("verificaTexto", (seletor, texto) => {
 // cy.get(seletor).should("contain", texto);});
+
+Cypress.Commands.add('getByData', (selector) => {
+    return cy.get(`[data-test=${selector}]`)
+})
