@@ -25,7 +25,6 @@ describe('Formulário de login', () => {
         cy.getByData('botao-login').click()
         cy.getByData('email-input').type('neilton@alura.com')
         cy.getByData('botao-enviar').click()
-        cy.getByData('mensagem-erro').should('exist').and('have.text',
-            'O campo de senha é obrigatório')
+        cy.getByData('mensagem-erro').should('exist').and('have.text','O campo de senha é obrigatório')
     })
 })
